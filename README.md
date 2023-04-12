@@ -12,8 +12,8 @@
          and subscribes to messages on the "devices/{deviceId}/messages/devicebound/#" topic.
 
   The circuit: Arduino MKR WiFi 1010
-  Red LED: Connecting to WiFi
-  Blue LED: Connecting to MQTT broker (Azure IoT Hub)
-  Green LED: Connected and sending telemetry
+  - Red LED: Connecting to WiFi
+  - Blue LED: Connecting to MQTT broker (Azure IoT Hub)
+  - Green LED: Connected and sending telemetry
 
   https://github.com/arduino/ArduinoCloudProviderExamples/tree/master/examples/AWS%20IoT/AWS_IoT_WiFi
