@@ -1,5 +1,5 @@
 /*
-  Azure_IoT_Hub_MKRWiFi1010_Simple
+  Azure_IoT_Hub_MKRWiFi1010_Simple 
   ================================
 
   This example securely connects to an Azure IoT Hub using MQTT over WiFi.
