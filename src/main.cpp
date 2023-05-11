@@ -6,10 +6,6 @@
   It uses a private key stored in the ATECC508A and a selfsigned
   certificate for SSL/TLS authetication.
 
-  It publishes a message every 5 seconds to arduino/outgoing
-  topic and subscribes to messages on the arduino/incoming
-  topic.
-
  It publishes a message every 5 seconds to "devices/{deviceId}/messages/events/"
          and subscribes to messages on the "devices/{deviceId}/messages/devicebound/#" topic.
 
@@ -34,8 +30,8 @@ const char pass[]        = SECRET_PASS;
 const char broker[]      = SECRET_BROKER;
 const char deviceId[]    = SECRET_DEVICE_ID;
 
-String publishTopic = "devices/MKRWiFi1010/messages/events/";
-String subscribeTopic = "devices/MKRWiFi1010/messages/devicebound/#";
+String publishTopic = "devices/" + String(deviceId) + "/messages/events/";
+String subscribeTopic = "devices/" + String(deviceId) + "/messages/devicebound/#";
 
 WiFiClient    wifiClient;            // Used for the TCP socket connection
 BearSSLClient sslClient(wifiClient); // Used for SSL/TLS connection, integrates with ECC508
