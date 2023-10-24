@@ -4,3 +4,5 @@
 #define SECRET_BROKER "<hostname of your Azure IoT Hub broker>"
 
 #define SECRET_DEVICE_ID "<device ID>"
+
+
