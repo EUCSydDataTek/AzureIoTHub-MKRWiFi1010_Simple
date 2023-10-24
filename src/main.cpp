@@ -66,7 +66,7 @@ void setup()
 
   mqttClient.setId(deviceId);
 
-  // Set the username to "<broker>/<device id>/api-version=2018-06-30" and empty password
+  // Set the username to "<broker>/<device id>/api-version=2021-04-12" and empty password
   String username = broker + String("/") + deviceId + String("/api-version=2021-04-12");
 
   mqttClient.setUsernamePassword(username, "");
