@@ -56,7 +56,7 @@ void setup()
 
   delay(3000);
   Serial.begin(9600);
-  // while (!Serial);
+  while (!Serial);
 
   initCertificate();
 
