@@ -30,7 +30,8 @@ const char pass[]        = SECRET_PASS;
 const char broker[]      = SECRET_BROKER;
 const char deviceId[]    = SECRET_DEVICE_ID;
 
-String publishTopic = "devices/" + String(deviceId) + "/messages/events/";
+String publishTopic = "devices/" + String(deviceId) + "/messages/events/";                                    // Payload Base64 encoded
+//String publishTopic = "devices/" + String(deviceId) + "/messages/events/$.ct=application%2Fjson&$.ce=utf-8";  // Payload ikke Base64 encoded
 String subscribeTopic = "devices/" + String(deviceId) + "/messages/devicebound/#";
 
 WiFiClient    wifiClient;            // Used for the TCP socket connection
